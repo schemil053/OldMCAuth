@@ -24,8 +24,8 @@ $sql = "CREATE TABLE IF NOT EXISTS sessions (
     user_id VARCHAR(255) NOT NULL,
     user_uuid VARCHAR(255) NOT NULL,
     session_id VARCHAR(255) NOT NULL,
-    server_id INT(11) NOT NULL,
-    timestamp VARCHAR(20) NOT NULL
+    server_id VARCHAR(255) NOT NULL,
+    timestamp BIGINT(20) NOT NULL
 )";
 
 if (mysqli_query($conn, $sql)) {
